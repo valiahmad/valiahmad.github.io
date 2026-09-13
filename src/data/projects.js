@@ -1,23 +1,61 @@
 export const projects = [
   {
-    number: '01',
-    title: 'AI Chatbot',
-    category: 'AI / LLM',
-    description: 'An AI assistant project exploring local language models, application integration, and practical conversational workflows.',
-    tags: ['Python', 'Django', 'Ollama', 'LLM'],
+    title: "AI Embassy Assistant",
+    category: "AI / NLP / Software",
+    description:
+      "An AI-powered assistant designed to help embassy visitors obtain information through a conversational interface. The system integrates a Django backend, Telegram bot, and locally hosted language models.",
+    technologies: [
+      "Python",
+      "Django",
+      "REST API",
+      "Telegram Bot",
+      "Ollama",
+      "LLM",
+    ],
+    status: "In development",
   },
   {
-    number: '02',
-    title: 'Infrastructure Monitoring',
-    category: 'Software / Systems',
-    description: 'A monitoring platform for tracking infrastructure availability, services, and operational events with automated notifications.',
-    tags: ['Python', 'Django', 'PostgreSQL', 'Automation'],
+    title: "NetWatch",
+    category: "Monitoring / DevOps",
+    description:
+      "A Django-based infrastructure monitoring platform for monitoring hosts, services, latency, SSL certificates, domain expiration, and operational assets with automated notifications.",
+    technologies: [
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "APScheduler",
+      "REST API",
+      "GitHub Actions",
+    ],
+    status: "Active development",
   },
   {
-    number: '03',
-    title: 'Sentiment Analysis',
-    category: 'NLP / Research',
-    description: 'Academic work on sentiment analysis, product feature extraction, and machine-learning approaches to review classification.',
-    tags: ['Python', 'NLP', 'Machine Learning'],
+    title: "Product Feature Extraction & Sentiment Analysis",
+    category: "AI / NLP / Research",
+    description:
+      "An NLP project focused on extracting product-related features and performing sentiment analysis, building on machine-learning and lexicon-based approaches.",
+    technologies: [
+      "Python",
+      "NLP",
+      "Machine Learning",
+      "Sentiment Analysis",
+      "Naive Bayes",
+    ],
+    status: "Academic project",
   },
-]
+  {
+    title: "Enterprise IT Infrastructure",
+    category: "Systems / Networking / Security",
+    description:
+      "Design, administration, troubleshooting, monitoring, and automation of enterprise IT infrastructure supporting organizational operations.",
+    technologies: [
+      "Cisco",
+      "FortiGate",
+      "Windows Server",
+      "VMware",
+      "Linux",
+      "Networking",
+    ],
+    status: "Professional experience",
+  },
+];
