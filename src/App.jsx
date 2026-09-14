@@ -6,7 +6,8 @@ function App() {
   return (
     <div className="site-shell">
       <NetworkBackground />
-      <nav className="nav">
+      <a className="skip-link" href="#main-content">Skip to content</a>
+      <nav className="nav" aria-label="Main navigation">
         <a className="brand" href="#top">VR<span>.</span></a>
         <div className="nav-links">
           <a href="#about">About</a>
@@ -15,23 +16,25 @@ function App() {
           <a href="#experience">Experience</a>
           <a href="#academic">Academic</a>
           <a href="#research">Research</a>
+          <a href="#cv">CV</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
 
-      <main id="top">
+      <main id="main-content"><div id="top" />
         <section className="hero section">
           <div className="hero-copy">
-            <p className="eyebrow">COMPUTER ENGINEER / AI / SOFTWARE / SYSTEMS</p>
-            <h1>Building intelligent software and reliable systems.</h1>
+            <p className="eyebrow">VALI AHMAD RAHMANI / COMPUTER ENGINEER</p>
+            <h1>Software experience. An AI direction.</h1>
             <p className="hero-text">
-              I am Vali Rahmani, a Computer Engineer with professional experience in
-              IT infrastructure, networking, systems, and software development — now
-              building deeper expertise in Artificial Intelligence and Machine Learning.
+              I build software for real operational needs, from monitoring applications to a
+              conversational assistant in development. My background combines embassy IT
+              operations with academic work in NLP and sentiment analysis. I am now
+              deepening my focus on applied AI.
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href="#projects">View selected work</a>
-              <a className="button button-secondary" href="#contact">Get in touch</a>
+              <a className="button button-secondary" href="#academic">Explore academic background</a>
             </div>
           </div>
           <div className="hero-panel">
@@ -116,10 +119,10 @@ function App() {
           <div className="expertise-grid">
             <article className="expertise-card expertise-primary">
               <span className="expertise-number">01</span>
-              <h3>AI & Machine Learning</h3>
+              <h3>Applied AI & NLP</h3>
               <p>
-                Natural Language Processing, machine learning, sentiment analysis,
-                intelligent applications, and local LLM experimentation.
+                Academic work in sentiment analysis and NLP, with current hands-on
+                development of a Telegram assistant using Django and Ollama.
               </p>
               <div className="expertise-tags">
                 <span>Python</span>
@@ -339,13 +342,13 @@ function App() {
               <div className="academic-metric">
                 <strong>3.84</strong>
                 <span>/ 4.00</span>
-                <p>Overall GPA</p>
+                <p>Overall GPA · as reported in my CV</p>
               </div>
 
               <div className="academic-metric">
                 <strong>3.94</strong>
                 <span>/ 4.00</span>
-                <p>Last two years</p>
+                <p>Last two years · as reported in my CV</p>
               </div>
 
               <div className="academic-metric">
@@ -428,7 +431,7 @@ function App() {
           <div className="research-grid">
             <article className="research-main">
               <p className="research-label">
-                Publication in preparation
+                Earlier research work
               </p>
 
               <h3>
@@ -442,7 +445,7 @@ function App() {
               </p>
 
               <span className="research-status">
-                Natural Language Processing Journal
+                Listed as in preparation in my earlier CV; not a published paper.
               </span>
             </article>
 
@@ -452,21 +455,35 @@ function App() {
               <ul>
                 <li>Natural Language Processing</li>
                 <li>Machine Learning</li>
-                <li>Deep Learning</li>
-                <li>Voice & Speech Recognition</li>
-                <li>Artificial Neural Networks</li>
-                <li>Computer Vision</li>
-                <li>Image Processing</li>
+                <li>Reliable language model applications</li>
+                <li>Evaluation of conversational systems</li>
               </ul>
             </aside>
           </div>
         </section>
 
+        <section id="cv" className="section">
+          <div className="section-heading"><span className="section-number">07</span><div>
+            <p className="eyebrow">Experience and education</p><h2>Two ways to explore my background.</h2>
+          </div></div>
+          <div className="audience-grid">
+            <article className="audience-card"><p className="eyebrow">For hiring teams</p>
+              <h3>Software and applied AI</h3><p>Python and Django projects, operational troubleshooting, databases, and deployment experience.</p>
+              <a className="button button-secondary" href="#projects">Explore practical work</a>
+              <a className="cv-download" href="/cv/Vali_Rahmani_Job_Resume.docx" download>Job résumé · Word draft ↓</a>
+            </article>
+            <article className="audience-card"><p className="eyebrow">For academic readers</p>
+              <h3>Computer science and NLP</h3><p>Computer engineering education, sentiment analysis, teaching experience, and an interest in reliable language applications.</p>
+              <a className="button button-secondary" href="#academic">Explore education and research</a>
+              <a className="cv-download" href="/cv/Vali_Rahmani_Academic_CV.docx" download>Academic CV · Word draft ↓</a>
+            </article>
+          </div>
+        </section>
         <section id="contact" className="section contact">
-          <p className="eyebrow">06 / CONTACT</p>
-          <h2>Let's build something useful.</h2>
+          <p className="eyebrow">08 / CONTACT</p>
+          <h2>Software, AI, and research opportunities.</h2>
           <a className="email" href="mailto:valirahmani.ac@gmail.com">valirahmani.ac@gmail.com</a>
-          <div className="contact-links"><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><a href="#top">LinkedIn ↗</a></div>
+          <div className="contact-links"><a href="https://github.com/valiahmad" target="_blank" rel="noreferrer">GitHub ↗</a></div>
         </section>
       </main>
       <footer>© {new Date().getFullYear()} Vali Rahmani</footer>

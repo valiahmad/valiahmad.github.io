@@ -9,6 +9,7 @@
   --bg: #080b0f;
   --panel: #0d1218;
   --line: #1e2730;
+  --border: #27333e;
   --muted: #8995a2;
   --accent: #56d7ff;
   --white: #f4f7fa
@@ -25,7 +26,7 @@ html {
 body {
   margin: 0;
   position: relative;
-  background: var(--background);
+  background: var(--bg);
 }
 
 #root {
@@ -668,7 +669,7 @@ footer {
 .expertise-card {
   min-height: 300px;
   padding: 2rem;
-  background: var(--background);
+  background: var(--bg);
 }
 
 .expertise-primary {
@@ -844,7 +845,7 @@ footer {
 .academic-primary,
 .academic-metrics {
   padding: 2.5rem;
-  background: var(--background);
+  background: var(--bg);
 }
 
 .degree-label {
@@ -1056,4 +1057,31 @@ body::before {
     radial-gradient(circle at 85% 70%,
       rgba(90, 200, 250, 0.04),
       transparent 30%);
+}
+/* Keep the decorative canvas visible behind content. */
+.site-shell { position: relative; isolation: isolate; background: transparent; }
+.network-background { z-index: -1; }
+:root { --muted: #a1adb9; }
+body::before { z-index: 0; }
+section { scroll-margin-top: 24px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+.skip-link { position: fixed; top: -80px; left: 20px; padding: 12px; background: #fff; color: #080b0f; z-index: 10; }
+.skip-link:focus { top: 10px; }
+.audience-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.audience-card { padding: 32px; border: 1px solid var(--border); background: rgba(13,18,24,.85); }
+.audience-card h3 { font-size: 26px; margin: 0 0 18px; }
+.audience-card p:not(.eyebrow) { color: var(--muted); line-height: 1.75; }
+.audience-card .button { display: inline-block; margin-top: 12px; }
+.cv-download { display: block; color: var(--accent); margin-top: 24px; font-size: 14px; }
+.hero-actions { flex-wrap: wrap; }
+@media(max-width: 800px) {
+ .nav { height: auto; min-height: 76px; gap: 20px; align-items: flex-start; padding-top: 22px; padding-bottom: 22px; }
+ .nav-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 12px 18px; font-size: 10px; }
+ .audience-grid { grid-template-columns: 1fr; }
+ .hero h1 { font-size: clamp(42px, 10vw, 70px); }
+ .email { overflow-wrap: anywhere; }
+}
+@media(prefers-reduced-motion: reduce) {
+ html { scroll-behavior: auto; }
+ *, *::before, *::after { animation: none !important; transition: none !important; }
 }

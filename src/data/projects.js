@@ -1,107 +1,62 @@
 export const projects = [
   {
-    title: "AI Embassy Assistant",
-    category: "AI / NLP / Software",
-    featured: true,
-
-    description:
-      "An AI-powered conversational assistant designed to help embassy visitors access organizational information through a simple conversational interface.",
-
-    problem:
-      "Visitors frequently need information about services, procedures, and organizational processes. The goal is to make this information easier to access through an intelligent conversational interface.",
-
-    solution:
-      "Built a Django-based backend with a REST API and Telegram interface, with locally hosted language models through Ollama. The architecture is designed to evolve from text-based assistance toward more advanced AI capabilities.",
-
-    technologies: [
+    "title": "AI Embassy Assistant",
+    "category": "Applied AI / NLP",
+    "featured": true,
+    "description": "A conversational assistant in development for accessing embassy service information.",
+    "problem": "Visitors need a straightforward way to find information about consular services.",
+    "solution": "Developing a Django application with a Telegram interface and locally hosted language models through Ollama. Basic message handling and model integration are working; service-answer reliability remains a development goal.",
+    "technologies": [
       "Python",
       "Django",
-      "REST API",
-      "Telegram Bot",
-      "Ollama",
-      "LLM",
-      "NLP",
+      "Telegram",
+      "Ollama"
     ],
-
-    status: "In development",
+    "status": "Working prototype · in development"
   },
-
   {
-    title: "NetWatch",
-    category: "Monitoring / DevOps",
-    featured: true,
-
-    description:
-      "A Django-based infrastructure monitoring platform for operational visibility across servers, network services, domains, SSL certificates, and critical assets.",
-
-    problem:
-      "Infrastructure failures and expiring operational assets can affect organizational services. Manual monitoring does not provide sufficient visibility or timely notification.",
-
-    solution:
-      "Developed a centralized monitoring application capable of checking host availability, service connectivity, latency, HTTP/HTTPS endpoints, SSL certificates, domain expiration, and other operational assets, with automated notification workflows.",
-
-    technologies: [
+    "title": "NetWatch",
+    "category": "Software / Automation",
+    "featured": true,
+    "description": "A Django application for infrastructure monitoring and attendance workflows.",
+    "problem": "Availability checks and attendance records need a consistent workflow and accessible reporting.",
+    "solution": "Implemented host and service checks, a dashboard, scheduled jobs, notification workflows, and attendance exports. Worked on deployment automation with GitHub Actions and Windows services.",
+    "technologies": [
       "Python",
       "Django",
       "PostgreSQL",
       "APScheduler",
-      "REST API",
-      "GitHub Actions",
+      "GitHub Actions"
     ],
-
-    status: "Active development",
+    "status": "Implemented features · ongoing development"
   },
-
   {
-    title: "Product Feature Extraction & Sentiment Analysis",
-    category: "AI / NLP / Research",
-    featured: true,
-
-    description:
-      "An academic NLP project focused on extracting product-related features and analyzing sentiment in textual reviews.",
-
-    problem:
-      "Product reviews contain valuable information about customer opinions, but useful product attributes and sentiment must be extracted from unstructured text.",
-
-    solution:
-      "Applied Natural Language Processing and machine-learning techniques to investigate product feature extraction and sentiment analysis, building on the user's academic work in NLP and sentiment classification.",
-
-    technologies: [
+    "title": "Product Feature Extraction & Sentiment Analysis",
+    "category": "Academic / NLP",
+    "featured": true,
+    "description": "My 2023 B.Sc. final project on product features and sentiment in review text.",
+    "problem": "Unstructured reviews make it difficult to identify which product attributes users discuss and how they feel about them.",
+    "solution": "Investigated product feature extraction and sentiment analysis as an undergraduate NLP project. This work provides the academic foundation for my current interest in language applications.",
+    "technologies": [
       "Python",
       "NLP",
-      "Machine Learning",
-      "Sentiment Analysis",
-      "Naive Bayes",
+      "Sentiment analysis"
     ],
-
-    status: "Academic project",
+    "status": "B.Sc. final project · 2023"
   },
-
   {
-    title: "Enterprise IT Infrastructure",
-    category: "Systems / Networking / Security",
-    featured: false,
-
-    description:
-      "Professional experience involving the operation, administration, troubleshooting, and improvement of enterprise IT infrastructure.",
-
-    problem:
-      "Organizational IT environments require reliable networking, systems, security, virtualization, monitoring, and continuous troubleshooting to maintain operational services.",
-
-    solution:
-      "Worked across network infrastructure, security systems, servers, virtualization environments, monitoring, troubleshooting, and software-based operational solutions.",
-
-    technologies: [
-      "Cisco",
-      "FortiGate",
-      "Windows Server",
-      "VMware",
-      "Linux",
-      "Networking",
-      "VPN",
-      "Virtualization",
+    "title": "Employee Inquiry Portal",
+    "category": "Web applications / Deployment",
+    "featured": false,
+    "description": "Deployment and maintenance work on an employee inquiry and identification-card application.",
+    "problem": "Employee inquiries and identification workflows require a working application and reliable database connectivity.",
+    "solution": "Configured the application and PostgreSQL connectivity, investigated API and access issues, and worked on employee data import and card-related workflows.",
+    "technologies": [
+      "Next.js",
+      "PostgreSQL",
+      "IIS",
+      "Windows Server"
     ],
-
-    status: "Professional experience",
-  },
+    "status": "Professional implementation work"
+  }
 ];
