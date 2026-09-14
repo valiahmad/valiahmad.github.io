@@ -1,9 +1,11 @@
 import { projects } from './data/projects'
 import { experience } from './data/experience'
+import NetworkBackground from "./components/NetworkBackground";
 
 function App() {
   return (
     <div className="site-shell">
+      <NetworkBackground />
       <nav className="nav">
         <a className="brand" href="#top">VR<span>.</span></a>
         <div className="nav-links">
