@@ -11,6 +11,8 @@ function App() {
           <a href="#expertise">Expertise</a>
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
+          <a href="#academic">Academic</a>
+          <a href="#research">Research</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -299,15 +301,162 @@ function App() {
           </div>
         </section>
 
-        <section className="section academic">
-          <div>
-            <p className="eyebrow">05 / ACADEMIC FOUNDATION</p>
-            <h2>Computer Engineering · AI/NLP foundation</h2>
+        <section id="academic" className="section academic-section">
+          <div className="section-heading">
+            <span className="section-number">05</span>
+
+            <div>
+              <p className="eyebrow">Academic foundation</p>
+              <h2>A strong foundation in computer engineering and AI.</h2>
+            </div>
           </div>
-          <div className="academic-facts">
-            <div><strong>3.84 / 4</strong><span>Overall GPA</span></div>
-            <div><strong>3.94 / 4</strong><span>Last two years</span></div>
-            <div><strong>2023</strong><span>B.Sc. Computer Engineering</span></div>
+
+          <div className="academic-grid">
+            <div className="academic-primary">
+              <div className="degree-label">
+                B.Sc. / Computer Engineering
+              </div>
+
+              <h3>
+                Islamic Azad University
+              </h3>
+
+              <p className="academic-location">
+                Tehran, Iran · 2019 — 2023
+              </p>
+
+              <p>
+                Undergraduate study covering computer engineering fundamentals,
+                algorithms, software engineering, operating systems, databases,
+                computer networks, artificial intelligence, computational
+                intelligence, Natural Language Processing, and computer vision.
+              </p>
+            </div>
+
+            <div className="academic-metrics">
+              <div className="academic-metric">
+                <strong>3.84</strong>
+                <span>/ 4.00</span>
+                <p>Overall GPA</p>
+              </div>
+
+              <div className="academic-metric">
+                <strong>3.94</strong>
+                <span>/ 4.00</span>
+                <p>Last two years</p>
+              </div>
+
+              <div className="academic-metric">
+                <strong>6th</strong>
+                <p>Rank among 2019 entrance students</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="academic-lower">
+            <div>
+              <p className="eyebrow">Selected coursework</p>
+
+              <div className="course-list">
+                <span>Natural Language Processing</span>
+                <span>Artificial Intelligence</span>
+                <span>Computational Intelligence</span>
+                <span>Computer Vision</span>
+                <span>Algorithms Design</span>
+                <span>Data Structures</span>
+                <span>Database</span>
+                <span>Operating Systems</span>
+                <span>Software Engineering</span>
+                <span>Software Testing</span>
+                <span>Computer Networks</span>
+                <span>Engineering Mathematics</span>
+                <span>Discrete Mathematics</span>
+              </div>
+            </div>
+
+            <div>
+              <p className="eyebrow">Academic work</p>
+
+              <div className="academic-work">
+                <div>
+                  <span>01</span>
+                  <strong>
+                    Product Feature Extraction & Sentiment Analysis
+                  </strong>
+                  <p>
+                    B.Sc. final project focused on Natural Language Processing
+                    and sentiment analysis.
+                  </p>
+                </div>
+
+                <div>
+                  <span>02</span>
+                  <strong>
+                    Advanced Programming — Teaching Assistant
+                  </strong>
+                  <p>
+                    Supported programming education and student technical work.
+                  </p>
+                </div>
+
+                <div>
+                  <span>03</span>
+                  <strong>
+                    Natural Language Processing — Mentor
+                  </strong>
+                  <p>
+                    Mentored students in NLP-related coursework and projects.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="research" className="section">
+          <div className="section-heading">
+            <span className="section-number">06</span>
+
+            <div>
+              <p className="eyebrow">Research</p>
+              <h2>Exploring language, intelligence, and machine learning.</h2>
+            </div>
+          </div>
+
+          <div className="research-grid">
+            <article className="research-main">
+              <p className="research-label">
+                Publication in preparation
+              </p>
+
+              <h3>
+                Improving Naïve Bayes Algorithm Using Lexicon in Sentiment Analysis
+              </h3>
+
+              <p>
+                Research work investigating the use of lexical information to
+                improve sentiment-analysis performance with a Naïve Bayes
+                classifier.
+              </p>
+
+              <span className="research-status">
+                Natural Language Processing Journal
+              </span>
+            </article>
+
+            <aside className="research-interests">
+              <p className="eyebrow">Research interests</p>
+
+              <ul>
+                <li>Natural Language Processing</li>
+                <li>Machine Learning</li>
+                <li>Deep Learning</li>
+                <li>Voice & Speech Recognition</li>
+                <li>Artificial Neural Networks</li>
+                <li>Computer Vision</li>
+                <li>Image Processing</li>
+              </ul>
+            </aside>
           </div>
         </section>
 
