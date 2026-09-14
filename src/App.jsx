@@ -41,23 +41,64 @@ function App() {
           </div>
         </section>
 
-        <section id="about" className="section split-section">
-          <div>
-            <p className="eyebrow">01 / ABOUT</p>
-            <h2>Engineering experience with an AI direction.</h2>
-          </div>
-          <div className="section-copy">
-            <p>
-              My background combines Computer Engineering, AI/NLP study, professional
-              infrastructure work, and software development. I build from the level of
-              networks and servers through applications and automation.
-            </p>
-            <p>
-              My next professional chapter is focused on becoming substantially stronger
-              in AI/ML through serious projects, experimentation, and research.
-            </p>
-          </div>
-        </section>
+        <section id="about" className="section about-section">
+  <div className="section-heading">
+    <span className="section-number">01</span>
+    <div>
+      <p className="eyebrow">About</p>
+      <h2>Engineering systems today. Building toward AI.</h2>
+    </div>
+  </div>
+
+  <div className="about-grid">
+    <div className="about-main">
+      <p className="about-lead">
+        I am a Computer Engineer working across software, systems,
+        infrastructure, and intelligent applications.
+      </p>
+
+      <p>
+        My professional experience has given me a strong foundation in
+        enterprise IT infrastructure, networking, systems administration,
+        security, virtualization, troubleshooting, monitoring, and
+        automation.
+      </p>
+
+      <p>
+        Alongside this professional work, my academic background has been
+        strongly connected to Artificial Intelligence and Natural Language
+        Processing. I am now deliberately deepening that direction through
+        AI projects, machine learning, NLP, and research-oriented work.
+      </p>
+
+      <p>
+        My goal is to combine strong engineering fundamentals with
+        increasingly specialized expertise in AI and intelligent software
+        systems.
+      </p>
+    </div>
+
+    <div className="about-aside">
+      <div className="about-stat">
+        <span>01</span>
+        <strong>AI</strong>
+        <p>Primary specialization direction</p>
+      </div>
+
+      <div className="about-stat">
+        <span>02</span>
+        <strong>Software</strong>
+        <p>Applications, APIs & automation</p>
+      </div>
+
+      <div className="about-stat">
+        <span>03</span>
+        <strong>Systems</strong>
+        <p>Infrastructure & operational engineering</p>
+      </div>
+    </div>
+  </div>
+</section>
 
         <section id="expertise" className="section">
           <p className="eyebrow">02 / EXPERTISE</p>
@@ -78,25 +119,65 @@ function App() {
         </section>
 
         <section id="projects" className="section">
-          <div className="section-heading">
-            <div><p className="eyebrow">03 / SELECTED WORK</p><h2>Projects that show how I think and build.</h2></div>
-            <span className="heading-note">Evidence over buzzwords.</span>
+  <div className="section-heading">
+    <span className="section-number">03</span>
+    <div>
+      <p className="eyebrow">Selected work</p>
+      <h2>Projects built around real problems.</h2>
+    </div>
+  </div>
+
+  <div className="projects-grid">
+    {projects.map((project, index) => (
+      <article
+        className={`project-card ${
+          project.featured ? "project-featured" : ""
+        }`}
+        key={project.title}
+      >
+        <div className="project-topline">
+          <span className="project-index">
+            {String(index + 1).padStart(2, "0")}
+          </span>
+
+          <span className="project-category">
+            {project.category}
+          </span>
+        </div>
+
+        <h3>{project.title}</h3>
+
+        <p className="project-description">
+          {project.description}
+        </p>
+
+        <div className="project-details">
+          <div>
+            <span className="detail-label">Problem</span>
+            <p>{project.problem}</p>
           </div>
-          <div className="projects-list">
-            {projects.map((project) => (
-              <article className="project" key={project.number}>
-                <span className="project-number">{project.number}</span>
-                <div className="project-main">
-                  <p className="project-category">{project.category}</p>
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
-                  <div className="tags">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
-                </div>
-                <span className="project-arrow">↗</span>
-              </article>
+
+          <div>
+            <span className="detail-label">Approach</span>
+            <p>{project.solution}</p>
+          </div>
+        </div>
+
+        <div className="project-footer">
+          <div className="tech-list">
+            {project.technologies.map((technology) => (
+              <span key={technology}>{technology}</span>
             ))}
           </div>
-        </section>
+
+          <span className="project-status">
+            {project.status}
+          </span>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>
 
         <section id="experience" className="section">
           <p className="eyebrow">04 / EXPERIENCE</p>
