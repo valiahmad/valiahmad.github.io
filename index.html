@@ -1,14 +1,19 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Vali Rahmani — Computer Engineer focused on AI, software engineering, systems, and infrastructure." />
-    <title>Vali Rahmani | AI • Software • Systems</title>
+    <meta name="description" content="Vali Ahmad Rahmani — Computer Engineer and IT Manager. Explore Python and Django projects, an NLP academic background, and work toward applied AI." />
+    <meta name="theme-color" content="#fafbfd" />
+    <meta property="og:title" content="Vali Rahmani | Software & Applied AI" />
+    <meta property="og:description" content="Practical software, an NLP foundation, and a clear AI direction. Projects, experience, recruiter notes, and downloadable CVs." />
+    <meta property="og:type" content="website" />
+    <title>Vali Rahmani | Software & Applied AI</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      // Set the saved theme before the first paint; fall back to the OS preference.
+      try { const saved=localStorage.getItem('vali-theme');document.documentElement.dataset.theme=['light','dark'].includes(saved)?saved:(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'); } catch { document.documentElement.dataset.theme=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'; }
+    </script>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  <body><div id="root"></div><noscript>This portfolio requires JavaScript. Contact Vali Rahmani at valirahmani.ac@gmail.com or download the <a href="/cv/Vali_Rahmani_Job_Resume.pdf">job résumé</a>.</noscript><script type="module" src="/src/main.jsx"></script></body>
 </html>
-
